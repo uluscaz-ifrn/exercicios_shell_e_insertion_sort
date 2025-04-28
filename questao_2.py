@@ -2,9 +2,9 @@ def insertion(lista:list[int], indice: int) -> list[int]:
     i = indice # início
     while (i > 0): #condição de parada
         if lista[i-1][1] > lista[i][1]:
-            aux = lista[i-1][1]
-            lista[i-1] = lista[i][1]
-            lista[i][1] = aux
+            aux = lista[i-1]
+            lista[i-1] = lista[i]
+            lista[i] = aux
         else:
             break
         i-= 1 #passo
